@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Efficient RAG</title>
+
+    <!-- CSS -->
+     <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW8T52d9dWD6QnGtqh9O2VKSLr8tftsBMDlg2gkjKmhWnWnxQbjT_ZKXCj&s=10" type="Jpg/x-icon">
+   <link rel="stylesheet" href="/frontend/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-robot"></i>
+
+        <div>
+
+            <h2>Cost Efficient RAG</h2>
+
+            <span class="online">
+                <i class="fa-solid fa-circle"></i>
+                Gemini Online
+            </span>
+
+        </div>
+
+    </div>
+
+    <section class="upload-area" id="dropArea">
+
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+    <h2>Drag & Drop PDF Here</h2>
+
+    <p>Drop your PDF here or use the Upload button in the sidebar.</p>
+
+</section>
+
+    <div class="uploaded-section">
+
+        <div class="section-title">
+
+            <h3>Documents</h3>
+
+            <span id="docCount">0</span>
+
+        </div>
+
+        <div id="uploadedFiles">
+
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <h3>Statistics</h3>
+
+        <div class="stat-item">
+
+            <span>📄 Documents</span>
+
+            <span id="totalDocs">0</span>
+
+        </div>
+
+        <div class="stat-item">
+
+            <span>📚 Chunks</span>
+
+            <span id="chunkCount">0</span>
+
+        </div>
+
+        <div class="stat-item">
+
+            <span>⚡ Latency</span>
+
+            <span id="latency">0 sec</span>
+
+        </div>
+
+        <div class="stat-item">
+
+            <span>🤖 Model</span>
+
+            <span>Gemini</span>
+
+        </div>
+
+    </div>
+
+</aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header>
+
+            <h1>AI Document Assistant</h1>
+
+            <p>
+                Ask intelligent questions from your uploaded documents.
+            </p>
+
+        </header>
+
+        <!-- Upload Area -->
+<section class="upload-area" id="dropArea">
+
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+    <h2>Drag & Drop PDF Here</h2>
+
+    <p>or</p>
+
+    <button id="uploadBtn" class="upload-btn">
+        Choose PDF
+    </button>
+
+    <input
+        type="file"
+        id="pdfInput"
+        accept=".pdf"
+        hidden
+    >
+
+</section>
+
+        <!-- Chat -->
+
+        <section class="chat-section">
+
+            <textarea
+                placeholder="Ask anything from your PDF..."
+                id="question">
+            </textarea>
+
+            <button id="askBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+                Ask AI
+            </button>
+
+        </section>
+
+        <!-- Answer -->
+
+        <section class="answer-card">
+
+            <h2>
+                <i class="fa-solid fa-brain"></i>
+                AI Answer
+            </h2>
+
+            <div id="answer">
+
+                Your answer will appear here...
+
+            </div>
+
+        </section>
+
+        <!-- Sources -->
+
+        <section class="sources-card">
+
+            <h2>
+                <i class="fa-solid fa-book-open"></i>
+                Sources
+            </h2>
+
+            <div id="sources">
+
+                No sources yet.
+
+            </div>
+
+        </section>
+
+        <!-- Metrics -->
+
+        <section class="metrics">
+
+            <div class="metric-box">
+
+                <i class="fa-solid fa-stopwatch"></i>
+
+                <h3>Latency</h3>
+
+                <span>0 sec</span>
+
+            </div>
+
+            <div class="metric-box">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <h3>Chunks</h3>
+
+                <span>0</span>
+
+            </div>
+
+            <div class="metric-box">
+
+                <i class="fa-solid fa-microchip"></i>
+
+                <h3>LLM</h3>
+
+                <span>Gemini</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="/frontend/script.js"></script>
+
+</body>
+</html>
