@@ -15,9 +15,6 @@ A Retrieval-Augmented Generation (RAG) system that answers questions from PDF do
 - Citation-Based Responses
 - FastAPI REST APIs
 
-
-
-
 📁 Folder: `cost-efficient-rag`
 
 ---
