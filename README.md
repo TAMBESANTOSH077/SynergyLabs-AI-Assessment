@@ -18,7 +18,6 @@ A Retrieval-Augmented Generation (RAG) system that answers questions from PDF do
 📁 Folder: `cost-efficient-rag`
 
 ---
-
 ### 📌 Problem 2 – LLM-as-Judge Evaluation Pipeline
 
 An evaluation framework that scores AI-generated responses using Large Language Models.
