@@ -33,7 +33,6 @@ An evaluation framework that scores AI-generated responses using Large Language 
 📁 Folder: `LLM-as-Judge Evaluation Pipeline`
 
 ---
-
 ## 🛠️ Tech Stack
 
 - Python
