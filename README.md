@@ -44,9 +44,6 @@ An evaluation framework that scores AI-generated responses using Large Language 
 - Docker
 
 ---
-
-
-
 ## 📁 Repository Structure
 
 ```text
