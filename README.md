@@ -4,6 +4,8 @@ This repository contains solutions for two AI Engineering problems using **Pytho
 
 ## 📂 Projects
 
+
+
 ### 📌 Problem 1 – Cost-Efficient RAG
 
 A Retrieval-Augmented Generation (RAG) system that answers questions from PDF documents using semantic search and Google Gemini.
